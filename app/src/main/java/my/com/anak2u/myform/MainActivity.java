@@ -9,12 +9,15 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     EditText nameEditText, emailEditText, cellEditText, phoneEditText, messageEditText;
+    Spinner spinner;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +27,12 @@ public class MainActivity extends AppCompatActivity {
         cellEditText = findViewById(R.id.cellEditText);
         phoneEditText = findViewById(R.id.phoneEditText);
         messageEditText = findViewById(R.id.messageEditText);
+        spinner = findViewById(R.id.spinner);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+                MainActivity.this,
+                R.array.departments, android.R.layout.simple_dropdown_item_1line);
+        adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        spinner.setAdapter(adapter);
     }
 
     public void buttonPressed(View view) {

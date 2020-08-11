@@ -11,4 +11,12 @@
     <string name="call_us">Call Us</string>
     <string name="email_us">Email Us</string>
     <string name="exit">Exit</string>
+    <string-array name="departments">
+        <item>I.T</item>
+        <item>Sales Marketing</item>
+        <item>H.R.</item>
+        <item>Legal</item>
+        <item>Communication</item>
+        <item>Others</item>
+    </string-array>
 </resources>

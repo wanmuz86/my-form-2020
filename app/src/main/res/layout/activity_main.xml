@@ -34,7 +34,10 @@
             android:id="@+id/cellEditText"
             android:hint="@string/cell"/>
     </LinearLayout>
-
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="0dp"
