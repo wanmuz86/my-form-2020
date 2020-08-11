@@ -65,6 +65,9 @@ public class MainActivity extends AppCompatActivity {
                 // When about us is pressed, it will show the new page
                 // The new page will only have a WebView inside a LinearLayout
                 //After lunch we will continue to show a real web page
+                // Notes: I will do the new page during afternoon session
+                 Intent intent = new Intent(MainActivity.this, WebActivity.class);
+                 startActivity(intent);
 
                 break;
             case R.id.call_us:
