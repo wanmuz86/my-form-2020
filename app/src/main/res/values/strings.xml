@@ -7,4 +7,8 @@
     <string name="message">Message</string>
     <string name="press_me">Press Me!</string>
     <string name="open_new_page">Open new page</string>
+    <string name="about_us">About Us</string>
+    <string name="call_us">Call Us</string>
+    <string name="email_us">Email Us</string>
+    <string name="exit">Exit</string>
 </resources>
