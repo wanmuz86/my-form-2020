@@ -48,5 +48,11 @@
         android:layout_gravity="end"
         android:onClick="buttonPressed"
         android:text="@string/press_me"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:onClick="openNewPagePressed"
+        android:text="@string/open_new_page"/>
 
 </LinearLayout>

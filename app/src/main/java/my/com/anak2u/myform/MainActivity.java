@@ -2,6 +2,7 @@ package my.com.anak2u.myform;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -34,5 +35,16 @@ public class MainActivity extends AppCompatActivity {
 
         // How long is LENGTH_LONG, How long is LENGTH_SHORT?
         Toast.makeText(MainActivity.this, messageToShow, Toast.LENGTH_LONG).show();
+    }
+
+    public void openNewPagePressed(View view) {
+        Intent intent = new Intent(MainActivity.this,SecondActivity.class);
+        // Passing data
+        intent.putExtra("name", nameEditText.getText().toString());
+        intent.putExtra("email", emailEditText.getText().toString());
+        intent.putExtra("cell", cellEditText.getText().toString());
+        intent.putExtra("phone",phoneEditText.getText().toString());
+        intent.putExtra("message",messageEditText.getText().toString());
+        startActivity(intent);
     }
 }
