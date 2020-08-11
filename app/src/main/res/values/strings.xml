@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Form</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="cell">Cell</string>
+    <string name="message">Message</string>
+    <string name="press_me">Press Me!</string>
+</resources>
