@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
+
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 R.array.departments, android.R.layout.simple_dropdown_item_1line);
         adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
         spinner.setAdapter(adapter);
+
 
         ArrayAdapter<CharSequence> adapterAC = ArrayAdapter.createFromResource(
                 MainActivity.this,
@@ -104,6 +106,11 @@ public class MainActivity extends AppCompatActivity {
                 emailIntent.putExtra(Intent.EXTRA_TEXT, "Here is my feedback ..");
                 emailIntent.setType("text/html");
                 startActivity(emailIntent);
+                break;
+            case R.id.credits:
+            Intent creditsIntent = new Intent(MainActivity.this,
+                    CreditsActivity.class);
+            startActivity(creditsIntent);
                 break;
             case R.id.exit:
                 finish();
