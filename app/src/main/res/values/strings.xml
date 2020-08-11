@@ -19,4 +19,20 @@
         <item>Communication</item>
         <item>Others</item>
     </string-array>
+    <string-array name="states">
+        <item>Selangor</item>
+        <item>Sabah</item>
+        <item>Sarawak</item>
+        <item>Kelantan</item>
+        <item>Kedah</item>
+        <item>Perlis</item>
+        <item>Pahang</item>
+        <item>Perak</item>
+        <item>Pulau Pinang</item>
+        <item>Johor</item>
+        <item>Melaka</item>
+        <item>Wilayah Persekutuan</item>
+        <item>Terengganu</item>
+        <item>Negeri Sembilan</item>
+    </string-array>
 </resources>

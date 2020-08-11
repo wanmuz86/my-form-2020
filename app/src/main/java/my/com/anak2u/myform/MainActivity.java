@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText nameEditText, emailEditText, cellEditText, phoneEditText, messageEditText;
     Spinner spinner;
+    AutoCompleteTextView autoCompleteTextView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,11 +30,20 @@ public class MainActivity extends AppCompatActivity {
         phoneEditText = findViewById(R.id.phoneEditText);
         messageEditText = findViewById(R.id.messageEditText);
         spinner = findViewById(R.id.spinner);
+        autoCompleteTextView = findViewById(R.id.autoCompleteTextView);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
                 MainActivity.this,
                 R.array.departments, android.R.layout.simple_dropdown_item_1line);
         adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
         spinner.setAdapter(adapter);
+
+        ArrayAdapter<CharSequence> adapterAC = ArrayAdapter.createFromResource(
+                MainActivity.this,
+                R.array.states,
+                android.R.layout.simple_list_item_1);
+        adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        autoCompleteTextView.setAdapter(adapterAC);
+
     }
 
     public void buttonPressed(View view) {
