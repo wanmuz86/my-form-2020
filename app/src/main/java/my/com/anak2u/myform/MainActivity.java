@@ -61,6 +61,11 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch(item.getItemId()){
             case R.id.about_us:
+                // Create a new page, which is called WebActivity
+                // When about us is pressed, it will show the new page
+                // The new page will only have a WebView inside a LinearLayout
+                //After lunch we will continue to show a real web page
+
                 break;
             case R.id.call_us:
 
@@ -68,7 +73,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.email_us:
 
                 break;
-            case R.id.exi:
+            case R.id.exit:
+                finish();
                 break;
         }
         return super.onOptionsItemSelected(item);
