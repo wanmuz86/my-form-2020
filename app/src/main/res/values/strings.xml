@@ -12,6 +12,8 @@
     <string name="email_us">Email Us</string>
     <string name="exit">Exit</string>
     <string name="credits">Credits</string>
+    <string name="call">Call</string>
+    <string name="visit_profile">Visit Profile</string>
     <string-array name="departments">
         <item>I.T</item>
         <item>Sales Marketing</item>
